@@ -1,0 +1,392 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" );
+
+:root{
+    --main-color: #2E8B57;
+    --black:#8B4513;
+    --bg:#F5F5DC;
+    --border:#D3D3D3;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+/*sobre*/
+.heading{
+    text-align: center;
+    color: #a19999;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/*botão*/
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor:pointer;
+    border-radius: .8rem;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color: #5f5858;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+/*icons*/
+.header .icons div{
+    color: #5f5858;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: var(--main-color)
+}
+
+#menu-btn{
+    display: none;
+}
+
+/*Busca*/
+.header .search-form{
+    position: absolute;
+    top: 115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height:100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+/*barra de pesquisa*/
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+
+
+/*home*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/urban_farm_iplant_background_1920x1080.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight:bold;
+    line-height: 2rem;
+    padding: 1rem 0;
+    color:#ffffff;
+}
+
+/*sobre*/
+.sobre .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.sobre .row .image{
+    flex: 1 1 45rem;
+}
+
+.sobre .row .image img{
+    width: 100%;
+}
+
+.sobre .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.sobre .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.sobre .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+
+/*Review*/
+.Colaboradores .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Colaboradores .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.Colaboradores .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #5f5858;
+    padding: 2rem 0;
+
+}
+
+.Colaboradores .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.box img{
+    width: 250px; /* Defina a largura desejada */
+    height: 250px; /* Defina a altura desejada */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    border-radius: 10px; /* Ajusta os cantos das imagens */
+}
+
+/*contato*/
+.contato .row{
+    display:flex;
+    background: var(--black);
+    flex-wrap: wrap; /* Faz com que os itens dentro do contêiner sejam movidos para a próxima linha quando o espaço disponível acabar.*/
+    gap: 1rem;
+}
+
+.contato .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover; /*A imagem ou vídeo será redimensionado para cobrir completamente o contêiner, mantendo suas proporções*/
+}
+
+.contato .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contato .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contato .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border: var(--border);
+}
+
+.contato .row form .inputBox span{
+    color: #5f5858;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contato .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color:#5f5858;
+    text-transform: none;
+    background: none;
+}
+
+/*blogs*/
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    border: var(--border);
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #5f5858;
+}
+
+.blogs .box-container .box .content .title:hover{
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .contentp{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+/*footer*/
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
