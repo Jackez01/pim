@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
+    background: #1d3f1d;
     border-radius: 5rem;
 }
 
@@ -166,7 +166,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/urban_farm_iplant_background_1920x1080.png) no-repeat;
+    background: url(images/WhatsApp\ Image\ 2024-10-12\ at\ 11.53.35.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
