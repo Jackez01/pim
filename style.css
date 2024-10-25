@@ -1,11 +1,11 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" );
+
 
 :root{
     --main-color: #2E8B57;
-    --black:#8B4513;
+    --brown:#8B4513;
     --bg:#F5F5DC;
-    --border:#D3D3D3;
+    --secondary:#D3D3D3;
 }
 
 *{
@@ -78,52 +78,50 @@ section{
 }
 
 
-.header{
+.page-header{
     background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 7%;
-    border-bottom: var(--border);
+    border-bottom: var(--secondary);
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
 }
 
-.header .logo img{
+.page-header .logo img{
     height: 6rem;
 }
 
-.header .navbar a{
+.page-header .main-navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
     color: #5f5858;
 }
 
-.header .navbar a:hover{
+.page-header .main-navbar a:hover{
     color:var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
 
 /*icons*/
-.header .icons div{
+.page-header .icones div{
     color: #5f5858;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
 
-.header .icons div:hover{
+.page-header .icones div:hover{
     color: var(--main-color)
 }
 
-#menu-btn{
-    display: none;
-}
+
 
 /*Busca*/
-.header .search-form{
+.page-header .search-form{
     position: absolute;
     top: 115%; right: 7%;
     background: #fff;
@@ -135,28 +133,28 @@ section{
     transform-origin: top;
 }
 
-.header .search-form.active{
+.page-header .search-form.active{
     transform: scaleY(1);
 }
 
-.header .search-form input{
+.page-header .search-form input{
     height:100%;
     width: 100%;
     font-size: 1.6rem;
-    color:var(--black);
+    color:var(--brown);
     padding: 1rem;
     text-transform: none;
 }
 
 /*barra de pesquisa*/
-.header .search-form label{
+.page-header .search-form label{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: var(--black);
+    color: var(--brown);
 }
 
-.header .search-form label:hover{
+.page-header .search-form label:hover{
     color:var(--main-color);
 }
 
@@ -184,32 +182,32 @@ section{
 }
 
 /*sobre*/
-.sobre .row{
+.sobre .line{
     display: flex;
     align-items: center;
-    background: var(--black);
+    background: var(--brown);
     flex-wrap: wrap;
 }
 
-.sobre .row .image{
+.sobre .line .image{
     flex: 1 1 45rem;
 }
 
-.sobre .row .image img{
+.sobre .line .image img{
     width: 100%;
 }
 
-.sobre .row .content{
+.sobre .line .content{
     flex: 1 1 45rem;
     padding: 2rem;
 }
 
-.sobre .row .content h3{
+.sobre .line .content h3{
     font-size: 3rem;
     color: #fff;
 }
 
-.sobre .row .content p{
+.sobre .line .content p{
     font-size: 1.6rem;
     color: #ccc;
     padding: 1rem 0;
@@ -224,7 +222,7 @@ section{
 }
 
 .Colaboradores .box-container .box{
-    border: var(--border);
+    border: var(--secondary);
     text-align: center;
     padding: 3rem 2rem;
 }
@@ -251,47 +249,47 @@ section{
 }
 
 /*contato*/
-.contato .row{
+.contact-info .line{
     display:flex;
-    background: var(--black);
+    background: var(--brown);
     flex-wrap: wrap; /* Faz com que os itens dentro do contêiner sejam movidos para a próxima linha quando o espaço disponível acabar.*/
     gap: 1rem;
 }
 
-.contato .row .map{
+.contact-info .line .map{
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover; /*A imagem ou vídeo será redimensionado para cobrir completamente o contêiner, mantendo suas proporções*/
 }
 
-.contato .row form{
+.contact-info .line form{
     flex: 1 1 45rem;
     padding: 5rem 2rem;
     text-align: center;
 }
 
-.contato .row form h3{
+.contact-info .line form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
     color: #fff;
 }
 
-.contato .row form .inputBox{
+.contact-info .line form .inputBox{
     display: flex;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background:var(--bg);
-    border: var(--border);
+    border: var(--secondary);
 }
 
-.contato .row form .inputBox span{
+.contact-info .line form .inputBox span{
     color: #5f5858;
     font-size: 2rem;
     padding-left: 2rem;
 }
 
-.contato .row form .inputBox input{
+.contact-info .line form .inputBox input{
     width: 100%;
     padding: 2rem;
     font-size: 1.7rem;
@@ -308,7 +306,7 @@ section{
 }
 
 .blogs .box-container .box{
-    border: var(--border);
+    border: var(--secondary);
 }
 
 .blogs .box-container .box .image{
@@ -357,7 +355,7 @@ section{
 
 /*footer*/
 .footer{
-    background: var(--black);
+    background: var(--brown);
     text-align: center;
 }
 
@@ -371,7 +369,7 @@ section{
     line-height: 3rem;
     font-size: 2rem;
     color: #fff;
-    border: var(--border);
+    border: var(--secondary);
     margin: .3rem;
     border-radius: 50%;
 }

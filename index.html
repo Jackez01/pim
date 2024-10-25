@@ -13,21 +13,20 @@
 <body>
 
 <!-- header-->
-<header class="header">
+<header class="page-header">
     <a href="#" class="logo">
         <img src="images/logo.png" alt="logo">
     </a> 
 
-    <nav class="navbar">
+    <nav class="main-navbar">
         <a href="#home">home</a>
         <a href="#sobre">sobre</a>
         <a href="#Colaboradores">Colaboradores</a>
-        <a href="#contato">contato</a>
+        <a href="#contact-info">contato</a>
     </nav>
 
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
+    <div class="icones">
+        <div class="fas fa-search" id="search-btn"></div>     
     </div>
 
     <div class="search-form">
@@ -52,7 +51,7 @@
 <section class="sobre" id="sobre">
     <h1 class="heading"> <span>Sobre</span> nós</h1>
 
-    <div class="row">
+    <div class="line">
 
         <div class="image">
            <img src="images/fazenda-urbana.jpg">
@@ -117,27 +116,31 @@
 
 <!--Contact section-->
 
-<section class="contato">
+<section class="contact-info">
 
     <h1 class="heading">Nos <span>contate</span></h1>
 
-    <div class="row">
+    <div class="line">
 
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.6629194883185!2d-47.03988972376352!3d-22.92580063855263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cee721c62481%3A0x1ba6762e2521750b!2sUNIP%20-%20Campinas!5e0!3m2!1spt-PT!2sbr!4v1728330792986!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.6629194883185!2d-47.03988972376352!3d-22.92580063855263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cee721c62481%3A0x1ba6762e2521750b!2sUNIP%20-%20Campinas!5e0!3m2!1spt-PT!2sbr!4v1728330792986!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
         <form action="">
             <h3>Peça em um toque</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
+                <input type="text" placeholder="Nome completo">
             </div>
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
+                <input type="email" placeholder="e-mail">
             </div>
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
+                <input type="number" placeholder="número de telefone">
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Escreva sua mensagem...">
             </div>
             <input type="submit" value="contate agora" class="btn">
 
