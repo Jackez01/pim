@@ -1,6 +1,5 @@
 
 
-
 :root{
     --main-color: #2E8B57;
     --brown:#8B4513;
@@ -24,19 +23,6 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar{
-    width: .8rem;
-}
-
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb{
-    background: #1d3f1d;
-    border-radius: 5rem;
 }
 
 body{
