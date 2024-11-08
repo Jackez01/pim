@@ -364,13 +364,3 @@ section{
     background-color: var(--main-color);
 }
 
-.footer .credit{
-    font-size: 1.6rem;
-    color: #fff;
-    font-weight: lighter;
-    padding: 1rem;
-}
-
-.footer .credit span{
-    color: var(--main-color);
-}
